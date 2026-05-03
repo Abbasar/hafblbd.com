@@ -1,0 +1,84 @@
+/* Icon styles for the website */
+
+/* Base icon styles */
+[class^="icon-"] {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: inline-block;
+  color: var(--dark-color); /* Deep color for all icons */
+  font-size: 1.2rem; /* Slightly larger icons */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Location icon */
+.icon-location:before {
+  content: "\f3c5"; /* map-marker-alt */
+  color: var(--primary-color); /* Deep green for location */
+}
+
+/* Phone icon */
+.icon-phone:before {
+  content: "\f095"; /* phone */
+  color: var(--secondary-color); /* Deep orange for phone */
+}
+
+/* Email icon */
+.icon-email:before {
+  content: "\f0e0"; /* envelope */
+  color: var(--accent-color); /* Deep blue for email */
+}
+
+/* Clock icon */
+.icon-clock:before {
+  content: "\f017"; /* clock */
+}
+
+/* Social media icons */
+.icon-facebook:before {
+  content: "\f39e"; /* facebook-f */
+  color: #1877F2; /* Facebook blue */
+}
+
+.icon-twitter:before {
+  content: "\f099"; /* twitter */
+  color: #1DA1F2; /* Twitter blue */
+}
+
+.icon-instagram:before {
+  content: "\f16d"; /* instagram */
+  color: #C13584; /* Instagram purple */
+}
+
+.icon-linkedin:before {
+  content: "\f0e1"; /* linkedin-in */
+  color: #0A66C2; /* LinkedIn blue */
+}
+
+/* Other common icons */
+.icon-search:before {
+  content: "\f002"; /* search */
+}
+
+.icon-cart:before {
+  content: "\f07a"; /* shopping-cart */
+}
+
+.icon-user:before {
+  content: "\f007"; /* user */
+}
+
+.icon-menu:before {
+  content: "\f0c9"; /* bars */
+}
+
+.icon-close:before {
+  content: "\f00d"; /* times */
+}
+
+.icon-arrow-right:before {
+  content: "\f061"; /* arrow-right */
+}
+
+.icon-check:before {
+  content: "\f00c"; /* check */
+}

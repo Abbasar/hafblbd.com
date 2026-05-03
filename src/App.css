@@ -1,0 +1,19 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
+.PageNotFound {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--error-color);
+}
+.ComingSoon {
+  text-align: center;
+  margin-top: 50px;
+  color: var(--info-color);
+}

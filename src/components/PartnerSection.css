@@ -1,0 +1,50 @@
+.partners-section {
+  background-color: #f8fff8;
+}
+
+.partners-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.partner-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+  transition: var(--transition);
+  border: 1px solid #eaeaea;
+}
+
+.partner-card:hover {
+  background-color: #f9f9f9;
+}
+
+.partner-card img {
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.partner-card h3 {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .partners-grid {
+    gap: 20px;
+  }
+  
+  .partner-card {
+    width: 150px;
+    padding: 20px;
+  }
+  
+  .partner-card img {
+    height: 60px;
+  }
+}

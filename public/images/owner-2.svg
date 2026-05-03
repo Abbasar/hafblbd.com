@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250">
+  <!-- Background -->
+  <rect width="200" height="250" fill="#E8F5E9" />
+  
+  <!-- Suit/Dress -->
+  <path d="M60 120 L80 250 L120 250 L140 120 Z" fill="#7B1FA2" />
+  
+  <!-- Collar -->
+  <path d="M80 120 L100 140 L120 120" fill="#FFFFFF" />
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="40" fill="#FFCC80" />
+  
+  <!-- Hair -->
+  <path d="M60 80 C60 40, 140 40, 140 80" fill="#4E342E" />
+  <path d="M60 80 C60 100, 70 110, 80 110" fill="#4E342E" />
+  <path d="M140 80 C140 100, 130 110, 120 110" fill="#4E342E" />
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="75" r="5" fill="#FFFFFF" />
+  <circle cx="115" cy="75" r="5" fill="#FFFFFF" />
+  <circle cx="85" cy="75" r="2" fill="#263238" />
+  <circle cx="115" cy="75" r="2" fill="#263238" />
+  
+  <!-- Eyebrows -->
+  <path d="M80 65 C85 60, 90 60, 95 65" fill="none" stroke="#4E342E" stroke-width="2" />
+  <path d="M105 65 C110 60, 115 60, 120 65" fill="none" stroke="#4E342E" stroke-width="2" />
+  
+  <!-- Nose -->
+  <path d="M100 75 L100 90 L95 90" fill="none" stroke="#FFCC80" stroke-width="2" />
+  
+  <!-- Mouth -->
+  <path d="M90 100 C95 105, 105 105, 110 100" fill="none" stroke="#D81B60" stroke-width="2" />
+  
+  <!-- Earrings -->
+  <circle cx="65" cy="80" r="3" fill="#FFC107" />
+  <circle cx="135" cy="80" r="3" fill="#FFC107" />
+</svg>

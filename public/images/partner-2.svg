@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100">
+  <!-- Background -->
+  <rect width="200" height="100" fill="#FFFFFF" />
+  
+  <!-- Organic Foods Logo -->
+  <rect x="30" y="30" width="40" height="40" fill="#4CAF50" />
+  <rect x="40" y="20" width="20" height="60" fill="#4CAF50" />
+  
+  <!-- Text -->
+  <text x="100" y="55" font-family="Arial" font-size="18" font-weight="bold" text-anchor="left" fill="#558B2F">Organic Foods</text>
+</svg>

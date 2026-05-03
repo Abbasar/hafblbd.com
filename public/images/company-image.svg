@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#E8F5E9" opacity="0.5" rx="20" ry="20" />
+  
+  <!-- Farm landscape -->
+  <rect x="0" y="200" width="400" height="100" fill="#8BC34A" />
+  
+  <!-- Sky -->
+  <rect x="0" y="0" width="400" height="200" fill="#B3E5FC" />
+  
+  <!-- Sun -->
+  <circle cx="350" cy="50" r="30" fill="#FFEB3B" />
+  <path d="M350 10 L350 0" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M350 90 L350 100" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M310 50 L300 50" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M390 50 L400 50" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M322 22 L315 15" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M378 78 L385 85" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M322 78 L315 85" stroke="#FFEB3B" stroke-width="3" />
+  <path d="M378 22 L385 15" stroke="#FFEB3B" stroke-width="3" />
+  
+  <!-- Factory building -->
+  <rect x="100" y="120" width="200" height="80" fill="#FFFFFF" stroke="#455A64" stroke-width="2" />
+  
+  <!-- Factory roof -->
+  <path d="M80 120 L200 80 L320 120" fill="#D32F2F" stroke="#B71C1C" stroke-width="2" />
+  
+  <!-- Factory windows -->
+  <rect x="120" y="140" width="20" height="20" fill="#B3E5FC" stroke="#455A64" stroke-width="1" />
+  <rect x="160" y="140" width="20" height="20" fill="#B3E5FC" stroke="#455A64" stroke-width="1" />
+  <rect x="220" y="140" width="20" height="20" fill="#B3E5FC" stroke="#455A64" stroke-width="1" />
+  <rect x="260" y="140" width="20" height="20" fill="#B3E5FC" stroke="#455A64" stroke-width="1" />
+  
+  <!-- Factory door -->
+  <rect x="190" y="160" width="20" height="40" fill="#5D4037" stroke="#3E2723" stroke-width="1" />
+  
+  <!-- Factory chimney -->
+  <rect x="130" y="70" width="20" height="50" fill="#78909C" stroke="#455A64" stroke-width="1" />
+  
+  <!-- Fruit trees -->
+  <circle cx="50" cy="180" r="20" fill="#8BC34A" />
+  <rect x="45" y="180" width="10" height="20" fill="#795548" />
+  <circle cx="40" cy="170" r="5" fill="#F44336" />
+  <circle cx="60" cy="170" r="5" fill="#F44336" />
+  <circle cx="50" cy="160" r="5" fill="#F44336" />
+  
+  <circle cx="350" cy="180" r="20" fill="#8BC34A" />
+  <rect x="345" y="180" width="10" height="20" fill="#795548" />
+  <circle cx="340" cy="170" r="5" fill="#FF9800" />
+  <circle cx="360" cy="170" r="5" fill="#FF9800" />
+  <circle cx="350" cy="160" r="5" fill="#FF9800" />
+  
+  <!-- Company name -->
+  <text x="200" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#FFFFFF" stroke="#455A64" stroke-width="0.5">Hossain Ali Food & Beverage Ltd</text>
+</svg>

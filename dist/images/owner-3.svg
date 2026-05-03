@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 250">
+  <!-- Background -->
+  <rect width="200" height="250" fill="#E8F5E9" />
+  
+  <!-- Suit -->
+  <rect x="60" y="120" width="80" height="130" fill="#1565C0" />
+  
+  <!-- Shirt -->
+  <path d="M80 120 L80 180 L120 180 L120 120 Z" fill="#FFFFFF" />
+  
+  <!-- Bowtie -->
+  <path d="M90 120 L110 120 L110 130 L100 135 L90 130 Z" fill="#FF9800" />
+  
+  <!-- Head -->
+  <circle cx="100" cy="80" r="40" fill="#FFCC80" />
+  
+  <!-- Hair -->
+  <path d="M70 50 C70 30, 130 30, 130 50" fill="#212121" />
+  <path d="M70 50 C70 70, 75 80, 80 80" fill="#212121" />
+  <path d="M130 50 C130 70, 125 80, 120 80" fill="#212121" />
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="75" r="5" fill="#FFFFFF" />
+  <circle cx="115" cy="75" r="5" fill="#FFFFFF" />
+  <circle cx="85" cy="75" r="2" fill="#263238" />
+  <circle cx="115" cy="75" r="2" fill="#263238" />
+  
+  <!-- Eyebrows -->
+  <path d="M80 65 C85 60, 90 60, 95 65" fill="none" stroke="#212121" stroke-width="2" />
+  <path d="M105 65 C110 60, 115 60, 120 65" fill="none" stroke="#212121" stroke-width="2" />
+  
+  <!-- Nose -->
+  <path d="M100 75 L100 90 L105 90" fill="none" stroke="#FFCC80" stroke-width="2" />
+  
+  <!-- Mouth -->
+  <path d="M90 100 C95 105, 105 105, 110 100" fill="none" stroke="#263238" stroke-width="2" />
+  
+  <!-- Beard -->
+  <path d="M80 95 C90 120, 110 120, 120 95" fill="#212121" />
+  <path d="M90 100 C95 105, 105 105, 110 100" fill="#FFCC80" />
+</svg>

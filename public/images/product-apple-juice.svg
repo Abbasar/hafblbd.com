@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Bottle -->
+  <path d="M80 20 L 120 20 L 120 50 L 130 60 L 130 180 L 70 180 L 70 60 L 80 50 Z" fill="#E0E0E0" opacity="0.7" />
+  <!-- Juice -->
+  <path d="M75 60 L 125 60 L 125 175 L 75 175 Z" fill="#FFEB3B" opacity="0.8" />
+  <!-- Bottle cap -->
+  <rect x="85" y="10" width="30" height="10" fill="#2E7D32" />
+  <!-- Bottle highlights -->
+  <path d="M80 60 L 90 60 L 90 175 L 80 175 Z" fill="#FFFFFF" opacity="0.2" />
+  <!-- Apple slice garnish -->
+  <path d="M105 30 C 115 30, 120 40, 115 50 C 110 60, 100 60, 95 50 C 90 40, 95 30, 105 30 Z" fill="#2E7D32" />
+  <path d="M105 35 C 112 35, 115 42, 112 48 C 108 55, 102 55, 98 48 C 95 42, 98 35, 105 35 Z" fill="#FFEB3B" opacity="0.8" />
+  <path d="M105 40 L 105 50" stroke="#5D4037" stroke-width="1" />
+  <path d="M100 45 L 110 45" stroke="#5D4037" stroke-width="1" />
+  <!-- Label -->
+  <rect x="80" y="100" width="40" height="30" rx="2" fill="#FFFFFF" />
+  <path d="M85 110 L 115 110" stroke="#2E7D32" stroke-width="2" />
+  <path d="M85 120 L 105 120" stroke="#2E7D32" stroke-width="2" />
+</svg>

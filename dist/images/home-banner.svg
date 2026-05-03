@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <!-- Background -->
+  <rect width="1200" height="400" fill="#E8F5E9" />
+  
+  <!-- Decorative elements -->
+  <path d="M0 350 Q 300 250, 600 350 Q 900 450, 1200 350 L 1200 400 L 0 400 Z" fill="#2E7D32" opacity="0.7" />
+  <path d="M0 370 Q 300 270, 600 370 Q 900 470, 1200 370 L 1200 400 L 0 400 Z" fill="#E65100" opacity="0.5" />
+  
+  <!-- Fruit basket -->
+  <ellipse cx="300" cy="280" rx="120" ry="40" fill="#5D4037" />
+  
+  <!-- Fruits in basket -->
+  <!-- Apple -->
+  <circle cx="250" cy="250" r="30" fill="#2E7D32" />
+  <path d="M250 220 C 250 215, 250 210, 255 205" stroke="#5D4037" stroke-width="2" fill="none" />
+  
+  <!-- Orange -->
+  <circle cx="300" cy="240" r="25" fill="#FF9800" />
+  <path d="M300 215 C 300 210, 300 205, 305 200" stroke="#5D4037" stroke-width="2" fill="none" />
+  
+  <!-- Mango -->
+  <ellipse cx="350" cy="250" rx="35" ry="25" fill="#FFEB3B" />
+  <path d="M350 225 C 350 220, 350 215, 355 210" stroke="#5D4037" stroke-width="2" fill="none" />
+  
+  <!-- Juice bottles -->
+  <rect x="700" y="200" width="40" height="80" rx="5" fill="#E0E0E0" opacity="0.7" />
+  <rect x="705" y="205" width="30" height="70" fill="#FF9800" />
+  <rect x="710" y="190" width="20" height="10" fill="#2E7D32" />
+  
+  <rect x="760" y="210" width="40" height="80" rx="5" fill="#E0E0E0" opacity="0.7" />
+  <rect x="765" y="215" width="30" height="70" fill="#2E7D32" opacity="0.7" />
+  <rect x="770" y="200" width="20" height="10" fill="#E65100" />
+  
+  <rect x="820" y="220" width="40" height="80" rx="5" fill="#E0E0E0" opacity="0.7" />
+  <rect x="825" y="225" width="30" height="70" fill="#FFEB3B" opacity="0.7" />
+  <rect x="830" y="210" width="20" height="10" fill="#2E7D32" />
+  
+  <!-- Text elements -->
+  <text x="600" y="100" font-family="Arial" font-size="48" font-weight="bold" fill="#2E7D32" text-anchor="middle">Fresh Fruits & Juices</text>
+  <text x="600" y="150" font-family="Arial" font-size="24" fill="#E65100" text-anchor="middle">Premium Quality, Farm Fresh</text>
+</svg>

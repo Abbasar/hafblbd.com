@@ -1,0 +1,89 @@
+.yes-brand-container {
+  max-width: 900px;
+  margin: 50px auto !important;
+  padding: 32px 16px;
+}
+
+.yes-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  justify-content: center;
+}
+
+.yes-brand-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(76,175,80,0.08);
+}
+
+.yes-brand-title {
+  font-size: 2rem;
+  color: var(--secondary-color, #4caf50);
+  font-weight: 700;
+  margin: 0;
+}
+
+.yes-brand-benefits {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.yes-benefit-card {
+  background: #f8f8f8;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(76,175,80,0.07);
+  padding: 24px 18px;
+  max-width: 260px;
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.yes-benefit-image {
+  width: 100%;
+  max-width: 180px;
+  height: 110px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(76,175,80,0.08);
+}
+
+.yes-benefit-name {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.yes-benefit-desc {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+  .yes-brand-benefits {
+    gap: 18px;
+  }
+  .yes-benefit-card {
+    max-width: 100%;
+    min-width: 160px;
+    padding: 18px 8px;
+  }
+  .yes-brand-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <!-- Background circle -->
+  <circle cx="20" cy="20" r="18" fill="#E8F5E9" />
+  <!-- Envelope -->
+  <rect x="10" y="14" width="20" height="12" rx="1" fill="#0D47A1" />
+  <!-- Envelope flap -->
+  <path d="M10 14 L20 20 L30 14" fill="none" stroke="#0D47A1" stroke-width="1" />
+  <!-- Envelope line -->
+  <path d="M10 26 L18 20" fill="none" stroke="#0D47A1" stroke-width="1" />
+  <path d="M30 26 L22 20" fill="none" stroke="#0D47A1" stroke-width="1" />
+</svg>
