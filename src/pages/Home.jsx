@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import OwnerSection from '../components/OwnerSection';
 import PartnerSection from '../components/PartnerSection';
 import SwiperHero from '../components/swiper';
 import './Home.css';
@@ -76,7 +75,7 @@ const Home = () => {
         <div className="container">
           <div className="about-company-content">
             <div className="about-company-image">
-              <img src="images/growth-pic.jpg" alt="Hossain Ali Food and Beverage Ltd" />
+              <img src="/images/growth-pic.jpg" alt="Hossain Ali Food and Beverage Ltd" />
             </div>
             <div className="about-company-text">
               <h2>Company Profile</h2>
@@ -104,7 +103,7 @@ const Home = () => {
               </div>
               <h3>Premium Mangoes</h3>
               <p>Fresh, Sweet and juicy mangoes from our own garden.</p>
-              <Link to="/#" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
+              <Link to="/explore" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
             </div>
 
             <div className="product-card">
@@ -113,7 +112,7 @@ const Home = () => {
               </div>
               <h3>Fresh Banana</h3>
               <p>100% natural from the hill region.</p>
-              <Link to="/#" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
+              <Link to="/explore" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
             </div>
 
             <div className="product-card">
@@ -122,12 +121,12 @@ const Home = () => {
               </div>
               <h3>Assorted Dried Fruits</h3>
               <p>Honey-sweet and vibrantly Red Lady Papaya offers a luscious, buttery texture in every healthy bite.</p>
-              <Link to="/#" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
+              <Link to="/explore" className="btn-small btn-secondary"><span>View Details</span> <span>→</span></Link>
             </div>
           </div>
 
           <div className="view-all-products">
-            <Link to="/#" className="btn btn-secondary">View All Products</Link>
+            <Link to="/explore" className="btn btn-secondary">View All Products</Link>
           </div>
         </div>
       </section>

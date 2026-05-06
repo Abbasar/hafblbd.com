@@ -24,7 +24,7 @@ A modern, responsive website for Hossain Ali Food and Beverage Ltd, a fruit proc
 - React.js
 - React Router for navigation
 - CSS for styling
-- Font Awesome for icons
+- React Icons and Lucide React for icons
 
 ## Getting Started
 
@@ -39,11 +39,17 @@ A modern, responsive website for Hossain Ali Food and Beverage Ltd, a fruit proc
    ```
    npm install
    ```
-3. Start the development server:
+3. Create a `.env` file in the project root and add:
+   ```
+   VITE_EMAILJS_SERVICE_ID=your_service_id
+   VITE_EMAILJS_TEMPLATE_ID=your_template_id
+   VITE_EMAILJS_PUBLIC_KEY=your_public_key
+   ```
+4. Start the development server:
    ```
    npm run dev
    ```
-4. Open your browser and navigate to `http://localhost:5173`
+5. Open your browser and navigate to `http://localhost:5173`
 
 ## Build for Production
 
@@ -57,5 +63,5 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-- Font Awesome for the icons
+- React Icons and Lucide React for icon libraries
 - Unsplash for placeholder images

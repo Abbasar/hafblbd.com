@@ -1,9 +1,14 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser'; // EmailJS import kora hoyeche
 import './Contact.css';
-import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 const Contact = () => {
+  const emailServiceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const emailTemplateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const emailPublicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+  const hasEmailConfig = Boolean(emailServiceId && emailTemplateId && emailPublicKey);
+
   const formRef = useRef(); // Form er reference er jonno
   const [formData, setFormData] = useState({
     name: '',
@@ -46,14 +51,24 @@ const Contact = () => {
       setIsSubmitting(true);
 
       // EmailJS Integration
+      if (!hasEmailConfig) {
+        setIsSubmitting(false);
+        setFormErrors({
+          submit: 'Email service is not configured. Please set VITE_EMAILJS_* environment variables.',
+        });
+        return;
+      }
+
       emailjs.sendForm(
-        'service_jl8tw0r', // Tomar Service ID
-        'template_re7jilz', // Eikhane tomar EmailJS Template ID boshao
+        emailServiceId,
+        emailTemplateId,
         formRef.current,
-        'QqevmKE-0fJGyU9u7'   // Eikhane tomar EmailJS Public Key (Account > Public Key) boshao
+        emailPublicKey
       )
       .then((result) => {
-          console.log('Email sent successfully:', result.text);
+          if (import.meta.env.DEV) {
+            console.log('Email sent successfully:', result.text);
+          }
           setFormSubmitted(true);
           setFormErrors({});
           setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
@@ -150,6 +165,8 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         className={formErrors.name ? 'error' : ''}
+                        autoComplete="name"
+                        required
                       />
                       {formErrors.name && <span className="error-message">{formErrors.name}</span>}
                     </div>
@@ -163,6 +180,8 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         className={formErrors.email ? 'error' : ''}
+                        autoComplete="email"
+                        required
                       />
                       {formErrors.email && <span className="error-message">{formErrors.email}</span>}
                     </div>
@@ -175,6 +194,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleChange}
+                        autoComplete="tel"
                       />
                     </div>
                     
@@ -187,6 +207,8 @@ const Contact = () => {
                         value={formData.subject}
                         onChange={handleChange}
                         className={formErrors.subject ? 'error' : ''}
+                        autoComplete="off"
+                        required
                       />
                       {formErrors.subject && <span className="error-message">{formErrors.subject}</span>}
                     </div>
@@ -200,9 +222,11 @@ const Contact = () => {
                         value={formData.message}
                         onChange={handleChange}
                         className={formErrors.message ? 'error' : ''}
+                        required
                       ></textarea>
                       {formErrors.message && <span className="error-message">{formErrors.message}</span>}
                     </div>
+                    {formErrors.submit && <span className="error-message">{formErrors.submit}</span>}
                     
                     <button type="submit" className="btn btn-submit" disabled={isSubmitting}>
                       {isSubmitting ? 'Sending...' : 'Send Message'}

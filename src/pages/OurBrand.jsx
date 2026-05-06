@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './OurBrand.css';
 
 const brands = [
@@ -44,13 +45,15 @@ const OurBrand = () => {
       {/* ব্র্যান্ড সিলেকশন গ্রিড */}
       <div className="brand-grid">
         {brands.map((brand) => (
-          <div 
+          <button
+            type="button"
             key={brand.name} 
             className={`brand-card ${activeBrand.name === brand.name ? 'active' : ''}`}
             onClick={() => setActiveBrand(brand)}
+            aria-pressed={activeBrand.name === brand.name}
           >
             <img src={brand.logo} alt={brand.name} />
-          </div>
+          </button>
         ))}
       </div>
 
@@ -69,9 +72,15 @@ const OurBrand = () => {
                 </ul>
               )}
 
-              <a href={activeBrand.url} target="_blank" rel="noreferrer" className="visit-link">
-                Visit Website
-              </a>
+              {activeBrand.url?.startsWith('http') ? (
+                <a href={activeBrand.url} target="_blank" rel="noopener noreferrer" className="visit-link">
+                  Visit Website
+                </a>
+              ) : (
+                <Link to={activeBrand.url || '/'} className="visit-link">
+                  Visit Website
+                </Link>
+              )}
             </div>
           </div>
         </div>

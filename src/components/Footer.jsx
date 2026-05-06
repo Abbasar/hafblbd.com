@@ -2,8 +2,6 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 import { FaPhone, FaFacebook, FaLinkedin, FaTwitter, FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FaP } from 'react-icons/fa6';
-import { Wheat } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -53,13 +51,13 @@ const Footer = () => {
                 </li>
                 <li>
                   <FaPhone />
-                  <a href="tel:+8801755579869" target="_blank" rel="noopener noreferrer">
+                  <a href="tel:+8801755579869">
                     <span>+880 1755 579869</span>
                   </a>
                 </li>
                 <li>
                   <MdEmail />
-                  <a href="mailto:hafblbd@gmail.com" target="_blank">
+                  <a href="mailto:hafblbd@gmail.com">
                     <span>hafblbd@gmail.com</span>
                   </a>
                 </li>
@@ -71,19 +69,19 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>&copy; {currentYear} Hossain Ali Food and Beverage Ltd. All Rights Reserved.</p>
           <div className="social-links">
-            <a href="#" aria-label="Phone">
+            <a href="tel:+8801755579869" aria-label="Phone">
               <FaPhone />
             </a>
-            <a href="#" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <FaLinkedin />
             </a>
-            <a href="#" aria-label="Twitter">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
               <FaTwitter />
             </a>
-            <a href="#" aria-label="Email">
+            <a href="mailto:hafblbd@gmail.com" aria-label="Email">
               <MdEmail />
             </a>
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook />
             </a>
           </div>

@@ -9,13 +9,13 @@ const benefits = [
   },
   {
     name: "Coffee",
-    image: "/images/product-coffee.svg", // Replace with your actual image if available
+    image: "/images/product-apple-juice.svg",
     description:
       "Increases alertness, may reduce risk of diabetes and neurodegenerative diseases, high in antioxidants.",
   },
   {
     name: "Nuts",
-    image: "/images/product-dried-nuts.svg", // Replace with your actual image if available
+    image: "/images/product-dried-fruits.svg",
     description:
       "Support heart health, good for brain function, provide healthy fats and proteins, help with weight management.",
   },

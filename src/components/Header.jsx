@@ -9,6 +9,10 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <header className="header">
       <div className="container header-container">
@@ -17,21 +21,28 @@ const Header = () => {
           <span>Hossain Ali Food and Beverage Ltd</span>
         </Link>
 
-        <button className={`mobile-menu-btn ${menuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+        <button
+          className={`mobile-menu-btn ${menuOpen ? 'active' : ''}`}
+          onClick={toggleMenu}
+          aria-expanded={menuOpen}
+          aria-controls="primary-navigation"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          type="button"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav className={`nav ${menuOpen ? 'active' : ''}`}>
+        <nav id="primary-navigation" className={`nav ${menuOpen ? 'active' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item">
-              <NavLink to="/" className={({ isActive }) => isActive ? 'active' : ''}>
+              <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? 'active' : ''}>
                 Home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/our-brand" className={({ isActive }) => isActive ? 'active' : ''}>
+              <NavLink to="/our-brand" onClick={closeMenu} className={({ isActive }) => isActive ? 'active' : ''}>
                 Our Brand
               </NavLink>
             </li>
@@ -41,12 +52,12 @@ const Header = () => {
               </NavLink>
             </li> */}
             <li className="nav-item">
-              <NavLink to="/about" className={({ isActive }) => isActive ? 'active' : ''}>
+              <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? 'active' : ''}>
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/contact" className={({ isActive }) => isActive ? 'active' : ''}>
+              <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? 'active' : ''}>
                 Contact
               </NavLink>
             </li>
